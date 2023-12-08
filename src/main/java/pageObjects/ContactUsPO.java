@@ -6,10 +6,7 @@ import org.openqa.selenium.support.How;
 import org.testng.Assert;
 import utils.GlobalVars;
 
-public class ContactUsPO extends Base_PO {
-    public ContactUsPO() {
-        super();
-    }
+public class ContactUsPO extends BasePO {
 
     public void navigateToContactUsPage() {
         navigateToUrl(GlobalVars.HOMEPAGE_URL + "/Contact-Us/contactus.html");

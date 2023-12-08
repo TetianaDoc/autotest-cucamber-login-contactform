@@ -4,22 +4,20 @@ import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.openqa.selenium.WebDriver;
-import pageObjects.Base_PO;
-import pageObjects.Login_PO;
+import pageObjects.BasePO;
+import pageObjects.LoginPO;
 
 
-public class Login_Steps extends Base_PO {
-    private WebDriver driver = getDriver();
-
-    private Login_PO login_po;
-
-    public Login_Steps(Login_PO login_po) {
+public class LoginSteps {
+    private LoginPO login_po;
+    public LoginSteps(LoginPO login_po) {
         this.login_po = login_po;
     }
 
     @Given("Go to login page")
     public void go_to_login_page() {
-        login_po.navigateToUrl("https://www.webdriveruniversity.com/Login-Portal/index.html?");
+        //login_po.navigateToUrl("https://www.webdriveruniversity.com/Login-Portal/index.html?");
+        login_po.navigateToLoginPage();
     }
 
     @When("I enter a specific username {word}")
@@ -64,6 +62,6 @@ public class Login_Steps extends Base_PO {
 
     @Then("I should be presented with a validation message {}")
     public void iShouldBePresentedWithAValidationMessage(String expectedMessage) {
-        waitForAlertAndValidateText(expectedMessage);
+        login_po.waitForAlertAndValidateText(expectedMessage);
     }
 }

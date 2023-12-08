@@ -4,10 +4,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import utils.GlobalVars;
 
-public class Login_PO extends Base_PO {
-    public Login_PO() {
-        super();
-    }
+public class LoginPO extends BasePO {
 
     public void navigateToLoginPage() {
         navigateToUrl(GlobalVars.HOMEPAGE_URL + "/Login-Portal/index.html?");
