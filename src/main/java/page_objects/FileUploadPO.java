@@ -1,4 +1,4 @@
-package pageObjects;
+package page_objects;
 
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -14,10 +14,6 @@ public class FileUploadPO extends BasePO {
 
     private @FindBy(id = "submit-button")
     WebElement submitFileUploadButton;
-
-    public void clickOnChooseFileButton() {
-        waitForElementAndClick(chooseFileButton);
-    }
 
     public void openFile() {
         chooseFileButton.sendKeys("/Users/tetianadotsenko/work/autotest-cucamber-webdriveruniversity.com/files_for_upload/photo.png");

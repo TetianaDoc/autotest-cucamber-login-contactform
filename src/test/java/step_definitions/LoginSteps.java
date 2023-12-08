@@ -1,11 +1,9 @@
-package stepDefinitions;
+package step_definitions;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
-import org.openqa.selenium.WebDriver;
-import pageObjects.BasePO;
-import pageObjects.LoginPO;
+import page_objects.LoginPO;
 
 
 public class LoginSteps {

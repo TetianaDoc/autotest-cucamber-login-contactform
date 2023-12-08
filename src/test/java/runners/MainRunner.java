@@ -6,8 +6,8 @@ import org.testng.annotations.DataProvider;
 
 @CucumberOptions(
         features = {"classpath:features"},
-        glue = {"stepDefinitions"},
-        tags = "@FileUpload",
+        glue = {"step_definitions"},
+        tags = "@file-upload",
         monochrome = true,
         dryRun = false,
         plugin = {"pretty", "html:target/cucumber_rep.html", "json:target/cucumber_report.json"}

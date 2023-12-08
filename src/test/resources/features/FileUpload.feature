@@ -1,4 +1,4 @@
-@FileUpload
+@file-upload @regression
 
 Feature: Webdriver University - File Upload Page
 
