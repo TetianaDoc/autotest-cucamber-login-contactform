@@ -14,7 +14,6 @@ public class LoginSteps {
 
     @Given("Go to login page")
     public void go_to_login_page() {
-        //login_po.navigateToUrl("https://www.webdriveruniversity.com/Login-Portal/index.html?");
         login_po.navigateToLoginPage();
     }
 
