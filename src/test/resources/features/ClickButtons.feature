@@ -1,4 +1,4 @@
-@click-buttons
+@click-buttons @regression
 
 Feature: Webdriver University - Click Buttons Page
 
