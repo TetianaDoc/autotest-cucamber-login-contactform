@@ -17,7 +17,7 @@ public class AccordionButtonsSteps {
         accordionButtonsPO.navigateToUrl(GlobalVars.HOMEPAGE_URL + "/Accordion/index.html");
     }
 
-    @When("I click on {} item button")
+    @When("I click on accordion {} item button")
     public void clickOnAccordionButton(String accordion) {
         accordionButtonsPO.clickAccordionButton(accordion);
     }

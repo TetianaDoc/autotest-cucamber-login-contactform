@@ -6,7 +6,7 @@ Feature: WebDriver University - Accordion Buttons
     Given Go to Accordion Items Page
 
   Scenario Outline: Validate Click on Accordion Items
-    When I click on <accordion> item button
+    When I click on accordion <accordion> item button
     Then Text <description> appears
     Examples:
       | accordion                | description                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |  |  |  |  |  |
