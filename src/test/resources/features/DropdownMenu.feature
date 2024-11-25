@@ -7,7 +7,7 @@ Feature: WebDriver University - Dropdown Menu, Checkbox and Radio Buttons
 
 
   Scenario Outline: Validate Dropdown Menu
-    When I click on <menu>
+    When I click on dropdown <menu>
     And I select option <value>
     Then The selected option <text> displayed
     Examples:

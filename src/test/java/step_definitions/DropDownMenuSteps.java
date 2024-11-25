@@ -19,7 +19,7 @@ public class DropDownMenuSteps {
         dropDownMenuPO.navigateToUrl(GlobalVars.HOMEPAGE_URL + "/Dropdown-Checkboxes-RadioButtons/index.html");
     }
 
-    @When("I click on {}")
+    @When("I click on dropdown {}")
     public void clickOnDropdownMenu(String menu) {
         dropDownMenuPO.clickOnDropDown(menu);
     }
